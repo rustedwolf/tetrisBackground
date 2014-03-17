@@ -1,4 +1,4 @@
 tetrisBackground
 ================
 
-Background animation with falling etris shapes
+This script generates background animation with falling tetris shapes.
