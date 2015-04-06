@@ -1,0 +1,27 @@
+{
+  "name": "tetrisBackground",
+  "version": "0.2.0",
+  "homepage": "https://github.com/rustedwolf/tetrisBackground",
+  "authors": [
+    "Ryszard <rustedwolf@gmail.com>"
+  ],
+  "description": "A tetris-like effect background",
+  "main": "raphael.tetrisBackground.js",
+  "keywords": [
+    "tetris",
+    "background",
+    "animation"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "raphael": "~2.1.4"
+  }
+}
