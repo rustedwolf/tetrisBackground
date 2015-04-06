@@ -13,7 +13,6 @@ var paper, targetObj, xBlockCount, yBlockCount, containerWidth, containerHeight,
  * @returns {object} Raphalel object, the block itself
  */
 function generateBlock(blockAreaSize, blockInfo, xOffset, yOffset) {
-
     var block = paper.rect(blockAreaSize * blockInfo[0] + xOffset, blockAreaSize * blockInfo[1] + yOffset, blockSize, blockSize)
         .attr({
             fill: blockColor,
@@ -62,7 +61,7 @@ function generateShape(shapeInfo) {
         shape.objects.push(generateBlock(blockAreaSize, blocks[j], posX, posY));
     }
 
-    return shape;
+	return shape;
 }
 
 /**
@@ -73,7 +72,6 @@ function generateShape(shapeInfo) {
  * @returns {undefined}
  */
 function dropShape(shape, speed) {
-
     var addY = (shape.rotate % 2 !== 0) ? 1 : 0;
     var addX = 0;
     if (shape.size === 2) {
@@ -140,9 +138,9 @@ function timeoutDrop() {
  * @returns {function} returns the interval loop
  */
 function dropShapes() {
-    for (var i = 0; i < shapeCount; i++) {
-        timeoutDrop();
-    }
+	for (var i = 0; i < shapeCount; i++) {
+		timeoutDrop();
+	}
 }
 
 function tetrisBackground(options) {
