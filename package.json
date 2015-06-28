@@ -1,5 +1,5 @@
 {
-  "name": "raphael.tertrisBackground",
+  "name": "raphael.tetrisBackground",
   "version": "0.2.1",
   "description": "A tetris-like effect background",
   "main": "Gruntfile.js",
