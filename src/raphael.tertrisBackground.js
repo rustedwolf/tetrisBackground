@@ -133,6 +133,9 @@ function tetrisBackground(options) {
     nextAction(shape);
   }
 
+  /**
+   * Finds a sweet spot for a new shape
+   */
   function getRandomShapeCordinates() {
     var keys = Object.keys(shapesData),
       keyPos = Math.floor((Math.random() * keys.length));
@@ -210,6 +213,8 @@ function tetrisBackground(options) {
 
   /**
    * Destroys the shape
+   *
+   * param {object} shape
    */
   function destroyShape(shape) {
     shape.objects.animate({
@@ -221,6 +226,11 @@ function tetrisBackground(options) {
     });
   }
 
+  /**
+   * Does the shape has space to move down?
+   *
+   * param {object} shape
+   */
   function canMoveDown(shape) {
     var canMove = true;
     var addY = (shape.rotate % 2 !== 0) ? 1 : 0;
